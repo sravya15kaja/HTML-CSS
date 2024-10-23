@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Caveat:wght@400..700&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Caveat:wght@400..700&family=Cookie&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Calligraffitti&family=Caveat:wght@400..700&family=Cookie&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   <style>
+
+    body,html{
+        overflow-x: hidden;   
+    }     
+    *{
+        margin: 0%;        
+    }
+    
+    /* nav */
+    .e1{
+        display:flex ;
+        justify-content: space-around;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        
+    }
+    .e1a{
+        font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:xx-large ;
+    }
+    .e1b{
+        display: flex;
+        margin-top: 25px;
+        gap: 20px;
+    }    
+    .e1b>a:link{
+        color: rgba(20, 3, 3, 0.772);
+        text-decoration: none;
+    }
+    .e1b>a:visited {
+        color: rgb(228, 105, 125);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    /* page */
+   
+    .e2a>a:link{
+        color: rgb(9, 0, 10);
+        text-decoration: none;
+        font-size: 40px;
+    }
+    .e2a>a:visited {
+        color:lightgray;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .e2c{
+        width: 100%;
+        background-color: rgba(102, 0, 0, 0.726);
+        font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        height: 85vh;
+        
+    }
+    .e2{
+        background-image: url(https://media.istockphoto.com/id/522735736/photo/chocolate-background.jpg?s=612x612&w=0&k=20&c=fmBbjHi5zXpcbzAQWGy3xtPgcIJkc7eHXjZiYsi396A=) ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 85vh;   
+        }
+        .e2a{
+            color: white;
+            margin: 13%;
+            margin-left: 15%;
+        }        
+               
+        .h1{
+            font-size: 700%;
+        }
+        .h2{   
+            font-size: 350%;
+        }
+        .e2b{
+              margin: 10%;
+            }
+        .h25{
+              width: 330px;
+              height: 330px;
+         }
+         .h25:hover:hover{
+           transform: rotate(360deg);
+           transition: all 2s;
+
+      }
+        /* about */
+        .tracking-in-expand-fwd {
+	             -webkit-animation: tracking-in-expand-fwd 8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	             animation: tracking-in-expand-fwd 8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                
+        }
+        .e3{
+            display: flex;
+            height: 85vh;
+        
+        }
+        .e3a{
+            margin: 8%;
+            width: 100%; 
+            z-index: -1;   
+        }
+        #h3{
+            margin-top: 25px;
+            font-family:  serif;
+            font-weight: 200;
+            font-style: normal;
+            text-align: justify;
+        }
+        .h44{
+            padding: 50px;
+            text-decoration: none;
+            margin-right: 10px;
+            color: rgb(142, 55, 55);
+            font-family: "Calligraffitti", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .e3b{        
+            width: 50%;
+            height: 50vh;
+            margin: 7%;
+        }
+        .h5,.h6{
+            font-family: "Cookie", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .h23:hover{ 
+            transform: scale(1.1);
+        }
+        /* chocolates */
+        .e4{
+            height: 400px;
+            margin-top: 40px;
+        }
+        #h13{
+            margin: 10px;
+            z-index: 0;
+        }
+        .h14{
+            margin-top: 10px;
+            margin-top: 10px;
+        }
+        .tracking-in-contract-bck {
+	        -webkit-animation: tracking-in-contract-bck 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       }
+        .e4b{
+            display: flex;
+            margin-left: 27%;
+            margin-top: 40px;
+            width: 100%;
+        }
+        .h15{
+            border: 1px solid;
+            height: 34.2vh;
+            margin-right: 20px;
+        }
+        .h15:hover{
+            border: 1px solid white;
+            box-shadow: 2px 2px 3px 2px grey;
+        }
+        .h15>img{
+            height: 100px;
+        }
+        .h16{
+            height: 50px;
+            color: white;
+            font-size: small;
+            padding: 5px;
+        }
+        .h16:hover{
+            background-color: rgb(102, 0, 0);
+            color: white;
+        }
+        /* offer */  
+        .e5{
+            height: 550px;
+        }
+        .e5a{
+            margin: 40px 190px;
+            border: 1px solid rgb(57, 54, 54);
+            height: 350px;
+        }
+        .e5b{
+            width: 50%;
+            height: 50px;
+            margin: -250px 350px;
+        }
+        
+        .h9,.h17{
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 10px;
+        }
+        .h10{
+            margin-top: 10px;
+            text-align: center;
+            background-color: rgb(102,0,0);
+            color: white;
+            padding: 4px;
+        }
+        .choco{
+            margin: 10%;
+            margin-top: 43%;
+        }
+        .h11{
+            text-decoration: none;
+            color: rgb(142, 55, 55);
+            font-family: "Calligraffitti", cursive;
+            font-weight: 600;
+            font-style: normal;
+            margin-bottom: 15%;
+        }
+        /* testimonial */
+        .e6{
+            display: flex;
+            height: 400px;
+        }
+        .e6a{
+            height: 60vh;
+            width: 100%;
+            margin-left: 28%;
+            margin-top: 12%;
+        }
+        .e6a:hover{
+            transform: rotatey(360deg);
+            transition: all 1s;
+        }
+        .e6b{
+            width: 750px;
+            height: 55vh;
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-left: 150px;
+            background-color: rgb(102,0,0);
+            border-radius: 15px;
+            color: white;
+        }
+        .h12{
+            margin-top: 20px; 
+            width: 100%;
+        }
+        .a{
+            display: flex;
+            gap: 20px;
+        }  
+        /* contact */
+        .e7{
+            display: flex;
+            height: 500px;
+        }
+        .e7a{
+            margin-top: 50px;
+            margin-left: 10%;
+        }
+        .h7{
+            padding: 9px;
+            margin: 11px;
+        }
+        .h8{
+            border: 1px solid;
+            padding: 10px;
+            background-color: rgb(102,0,0);
+            color: white;
+            margin-left: 15px;
+        }
+        .h8:hover{
+            background-color: white;
+            color: rgb(102,0,0);
+
+        }
+        .e7b{
+            width: 100%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 30px;
+        } 
+             /*blog page  */
+        .e8{
+            background-color: black;
+            height:350px ;
+        }
+        .e8a{
+            margin-top: 20px;
+            margin-left: 20%;
+            padding: 15px;
+        }
+        .h17{
+            color: white;
+            margin-top: 25px;
+            margin-left: 20%;
+        }
+        .h18{
+            color: white;
+            text-decoration: none;
+            margin-left: 20%;
+        }
+        .e8b{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            font-size: small;
+            margin: 30px;
+        }
+        .e8c{
+            display: flex;
+        }
+        .h19{
+            margin-top: 20px;
+            border: 2px solid white ;
+        }
+        .h20{
+            color: white;
+            margin-top: 28px;
+            margin-left: 10px;
+        }
+        .h21{
+            color: white;
+            margin-left: 5px;
+            margin-top: 20px;
+            font-size: large;
+        }
+        .h22{
+            font-size: x-large;
+            color: white;
+            padding: 20px;
+        }
+        
+    @-webkit-keyframes tracking-in-expand-fwd {
+     0% {
+         letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+         transform: translateZ(-700px);
+        opacity: 0;
+       }
+     40% {
+         opacity: 0.6;
+      }
+     100% {
+          -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+         opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+                transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+    }
+    }
+    @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+    }
+    }
+    @keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+                transform: translateZ(400px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+    }
+    }
+    @media screen and (width>1300px)
+    {
+        /* pages */
+        .e2{
+            height: 50vh;
+        }
+        .e2a{
+            margin-top: 10%;
+        }
+        .e2b{
+            margin-top: 8%;
+        }
+        .h2{
+            font-size: 500%;
+        }
+        .h1{
+            font-size: 800%;
+        }
+        .e2c{
+            height: 50vh;
+        }
+        /* about */
+        .e3{
+            height: 45vh;
+        }
+        .e3a{
+            margin-top: 5%;
+        }
+        .e3b{
+            margin-top: 4%;
+        }
+        .tracking-in-expand-fwd{
+            font-size: 280%;
+        }
+        #h3{
+            font-size: x-large;
+        }
+        .h44{
+            padding-top: 2px;
+        }
+        /* chocolates */
+        .h15{
+            height:20vh ;
+        }
+        #h13{
+            font-size: 280%;
+        }
+        .h14{
+            font-size: x-large;
+        }
+        .e4b{
+            margin-left: 32.5%;
+        }
+        /* offers */
+        .choco{
+            margin-top: 37.5%;
+        }
+        .e5b{
+            margin-left: 27%;
+        }
+        /* testimonial */
+        .e6{
+            height: 45vh;
+        }
+        .e6a{
+            height: 40vh;
+        }
+        .e6b{
+            height: 34vh;
+            width: 80%;
+        }
+        /* .h12{
+            font-size: x-large;
+        } */
+
+    }
+    /* laptop */
+    @media screen and (width<1200px)
+    {
+        /* pages */
+        .e2{
+            height: 50vh;
+        }
+     .e2c{
+        height: 50vh;
+     }   
+     /* about */
+     .e3{
+        height: 50vh;
+     }
+     .tracking-in-expand-fwd
+        {
+            font-size: 26px;
+        }
+        .h44{
+            padding-left: 7%;
+            padding-top: 5%;
+        }
+        /* chocolates */           
+        .h15{
+            height: 23vh;
+        }
+        /* offers */
+        .e5a{
+            width: 70%;
+            margin-left: 16%;
+        }
+        .choco{
+            margin-top: 48%;
+        }
+        .e5b{
+            margin-left: 27%;
+        }
+        /* testimonal */
+        .e6a{
+            height: 33vh;
+            margin-left: 10%;
+        }
+        .e6b{
+            height: 30vh;
+            margin-left: 4%;
+        }
+        /* contact */
+       .e7a{
+        padding-left: 2%;
+       }
+       .h7{
+        padding: 3%;
+       }
+       iframe{
+        width: 80%;
+       }
+       /* blog */
+       .e8{
+        height: 35vh;
+       }
+    }
+    /* mini laptop */
+    @media screen and(width<950px) 
+    {
+        /* pages */
+        .e2{
+            height: 49vh;
+        }
+        .e2c{
+            height: 49vh;
+        }   
+        .h25{
+            margin-right: 10%;
+        }    
+         /*about  */
+         .e3{
+            height: 60vh;
+         }
+         .e3b{
+            margin-right: 30px;
+         }
+         .tracking-in-expand-fwd{
+            font-size: 23px;
+        }
+        #h3{
+            font-size: 20px;
+        }
+        /* chocolates */
+        .e4b{
+            margin-left: 20%;
+        }
+        .h15{
+            height: 23vh;
+        }
+        /* offers */
+        .e5a{
+            width: 70%;
+            margin-left: 15%;
+        }
+        .choco{
+            margin-top: 59%;
+        }
+        .e5b{
+            margin-left: 20%;
+        }
+        /* testimonal */
+        .e6a{
+            height: 40vh;
+            margin-left: 10%;
+        }
+        .e6b{
+            height: 36vh;
+            margin-left: 4%;
+        }
+        /* contact */
+        .e7{
+            flex-direction: column;
+            height: 110vh;
+        }
+        .h6{
+           margin-left: 23%;
+           font-size: 60px;
+        }
+        .e7a{
+            margin-top: 62px;
+            margin-left: 17%;
+            padding: 8px;
+        }
+        .h7{
+            padding: 7px;
+        }
+        .h8{
+            margin-left: 30%; 
+        }
+        .e7b{
+            margin-left: 12%;
+            margin-right: 5%;
+        }
+        iframe{
+            height:45vh;
+            width: 80%;
+        }
+        /* blog page */
+        .e8{
+            height: 70vh;
+            padding: 10%;
+        }
+        .e8a{
+            margin-left: 3%;
+            padding:5px;
+            width: 40%;
+        }
+        #e88{
+            margin-left: 8%;
+            
+        }
+        i{
+            margin-top: 5%;
+            padding-left: 5%;   
+        }
+        .e8b{
+            grid-template-columns: auto auto ;
+            margin-left: 10%;
+            margin-right: 3%;
+            gap: 20px;
+            
+        }
+    }
+    @media screen and (width<860px)
+    {
+        /* pages */
+     .e2b{
+        margin-right: 5%;
+     } 
+     .e2a{
+        margin-left: 5%;
+     }
+       /*about  */
+     #h3{
+        width: 100%;
+     }
+     /* chocolates */
+     .e4b{
+        margin-left: 18%;
+     }
+     /* offers */
+     .e5b{
+        margin-left: 20%;
+     }
+     .choco{
+        margin-top:60%;
+     }
+     /* blog post */
+     .e8a{
+        margin-left: 5%;
+     }
+    }
+    /* tablets */
+    @media screen and (width<750px)
+    { 
+        .e1b{
+            gap: 10px;
+        }
+        .e1a{
+            font-size: x-large;
+            margin-top: 2%;
+        }
+        /* pages */
+        .e2{
+            height: 49vh;
+        }
+        .e2c{
+            height: 49vh;
+        }
+        .h1{
+            font-size: 600%;
+        }
+        .h2{
+            font-size: 300%;
+        }
+        .e2a{
+            margin-left: 7%;
+            margin-top: 15%;
+        }
+        .h25{
+            margin-top: 13%;
+            width: 250px;
+            height: 250px;
+        }   
+        /* about */
+        .e3{
+            flex-direction: column;
+            height: 100vh;
+        }
+        .tracking-in-expand-fwd{
+            font-size: xx-large;
+            margin-left: 25%;
+        }
+        #h3{
+            width: 70%;
+            padding-right: 3%;
+            font-size: x-large;
+            margin-left: 10%;
+        }
+        .e3b{
+            margin-top: 1%;
+            margin-left: 25%;
+        }
+        .h44{
+            padding-left: 15%;
+        }
+        /* chocolate */
+        .e4b{
+            flex-direction: column;
+            margin-left: 17%;
+            width: 70%;            
+        }
+        .h15{
+            height: 29vh;
+            padding-bottom: 5px;
+        }
+        .h15>img{
+            width: 100%;
+            height: 170px;
+        }
+        .e4{
+            height: 110vh;
+        }
+        .h16{
+            padding: 2px;
+            height: 40px;
+        }
+        .h14{
+            width: 80%;
+        }
+        /* offers */
+        .e5a{
+            margin-left: 10%;
+            width: 80%;
+        }
+        .choco{
+            margin-top: 60%;
+        }
+        .e5b{
+            width: 5%;
+            height: 25%;
+            margin-left:15%;
+            margin-right: 2%;
+        }
+        /* testimonal */
+        .e6{
+            flex-direction: column;
+            height: 800px;
+        }
+        .e6a{
+            margin-top: 6%;
+            height: 40vh;
+            width: 50%;
+            margin-left: 30%;
+        }
+        .e6b{
+            margin-top: 10px;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            width: 90%;
+        }
+        /* contact */
+        .e7{
+            flex-direction: column;
+            height: 110vh;
+        }
+        .h6{
+           margin-left: 23%;
+           font-size: 60px;
+        }
+        .e7a{
+            margin-top: 62px;
+            margin-left: 17%;
+            padding: 8px;
+        }
+        .h7{
+            padding: 7px;
+        }
+        .h8{
+            margin-left: 30%; 
+        }
+        .e7b{
+            margin-left: 12%;
+            margin-right: 5%;
+        }
+        iframe{
+            height:45vh;
+            width: 80%;
+        }
+        /* blog page */
+        .e8{
+            height: 70vh;
+            padding: 10%;
+        }
+        .e8a{
+            margin-left: 3%;
+            padding:5px;
+            width: 40%;
+        }
+        #e88{
+            margin-left: 8%;
+            
+        }
+        i{
+            margin-top: 5%;
+            padding-left: 2%;   
+        }
+        .e8b{
+            grid-template-columns: auto auto ;
+            margin-left: 10%;
+            gap: 20px;
+            
+        }
+
+
+     
+    }
+/* mobile screen */
+    @media screen and (width<600px)
+    { 
+        .e1b{
+            gap: 5px;
+            font-size: small;
+        }
+        .e1a{
+            margin-top: 2%;
+            font-size: large;
+        }
+        /* pages */
+        .e2{
+            height: 40vh;
+        }
+        .e2c{
+            height: 40vh;
+        }
+        .h1{
+            font-size: 400%;
+        }
+        .h2{
+            font-size: 200%;
+        }
+        .e2a{
+            margin-left: 7%;
+        }
+        .h25{
+        width: 200px;
+        height: 200px;
+        }   
+        /* about */
+        .e3{
+            flex-direction: column;
+            height: 90vh;
+        }
+        .tracking-in-expand-fwd{
+            font-size: xx-large;
+        }
+        #h3{
+            width: 70%;
+            padding-right: 3%;
+            font-size: x-large;
+        }
+        .e3b{
+            margin-top: 1%;
+            margin-left: 5%;
+        }
+        /* chocolates */
+        .e4b{
+            flex-direction: column;
+            margin-left: 30%;
+            width: 50%;            
+        }
+        .h15{
+            height: 25vh;
+            padding-bottom: 5px;
+        }
+        .h15>img{
+            width: 100%;
+            height: 150px;
+        }
+        .e4{
+            height: 100vh;
+        }
+        .h16{
+            padding: 2px;
+            height: 40px;
+        }
+        .h14{
+            width: 80%;
+        }
+        /* offers */
+        .e5a{
+            margin-left: 10%;
+            width: 80%;
+        }
+        .choco{
+            margin-top: 75%;
+        }
+        .e5b{
+            width: 5%;
+            height: 25%;
+            margin-left:1%;
+            margin-right: 2%;
+        }
+        /* testimonal */
+        .e6{
+            flex-direction: column;
+            height: 80vh;
+        }
+        .e6a{
+            margin-top: 6%;
+            height: 40vh;
+            width: 50%;
+            margin-left: 30%;
+        }
+        .e6b{
+            margin-top: 10px;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            width: 90%;
+        }
+        /* contact */
+        .e7{
+            flex-direction: column;
+            height: 110vh;
+        }
+        .e7a{
+            margin-top: 60px;
+            margin-left: 11%;
+        }
+        .h7{
+            padding: 10px;
+        }
+        .e7b{
+            margin-left: 12%;
+            margin-right: 5%;
+        }
+        iframe{
+            height:45vh;
+            width: 80%;
+        }
+        /* blog page */
+        .e8{
+            height: 110vh;
+            padding: 10%;
+        }
+        .e8a{
+            margin-left: 3%;
+            padding:5px;
+            width: 40%;
+        }
+        #e88{
+            margin-left: 8%;
+            
+        }
+        i{
+            margin-top: 5%;
+            padding-left: 2%;   
+        }
+        .e8b{
+            grid-template-columns: auto ;
+            margin-left: 20%;
+            gap: 20px;
+            
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="e1">
+             <div class="e1a">
+                <h2>chocolux</h2>
+             </div>
+             <div class="e1b">
+                <a href="#HOME">HOME</a>
+                <a href="#ABOUT">ABOUT</a>
+                <a href="#CHOCOLATES">CHOCOLATES</a>
+                <a href="#OFFERS">OFFERS</a>
+                <a href="#TESTIMONIAL">TESTIMONIAL</a>
+                <a href="#CONTACT US">CONTACT US</a>
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                <p><i class="fa-solid fa-user"></i></p>
+             </div>
+    </nav>
+<hr>
+<!-- page -->
+    <div class="e2" id="HOME" >
+         <div class="e2c">
+            <div class="e2a">
+                <h2 class="h2">Chocolate</h2>
+                <h1 class="h1">yummy</h1>
+                <a href="https://en.wikipedia.org/wiki/Chocolate"><b>read more</b> <img src="white-arrow.png"></a>
+            </div>
+            <div class="e2b">
+                <img src="slider-img.png" class="h25">            
+            </div>   
+         </div>
+    </div>   
+<hr>
+<!-- about -->
+<div class="e3" id="ABOUT">
+    <div class="e3a">
+        <h1 class="tracking-in-expand-fwd">About Our Company</h1><br>
+        <p id="h3">Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text,</p><br>
+        <p class="h44">Read more
+            <img src="color-arrow.png"> </p>
+    </div>
+    <div class="e3b">
+        <img src="about-img.png" class="h23">
+    </div>
+</div>
+    <hr>
+    <!-- chocolates -->     
+<div class="e4" id="CHOCOLATES">
+        <div class="e4a">
+            <center>
+            <h1 class="tracking-in-contract-bck" id="h13">Our chocolate products</h1>
+            <p class="h14">Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their</p>
+            </center>
+        </div>
+        <div class=" e4b">
+            <div class="h15">
+                <img src="chocolate1.png">
+                <br><br><br>              
+                <center class="h16">
+                    <p>YUMMY <span>CHOCOLATES</span></p>
+                    <p>$5.0</p> 
+                    <p>Buy Now</p>
+                </center>    
+            </div>
+            <div class="h15">
+                <img src="chocolate2.png">
+                <br><br><br> 
+                <center class="h16">
+                    <p>YUMMY <span>CHOCOLATES</span></p>
+                    <p>$5.0</p> 
+                    <p>Buy Now</p></center> 
+            </div>
+            <div class="h15">
+                <img src="chocolate3.png"  >
+                <br><br><br>
+                <center class="h16">
+                    <p>YUMMY <span>CHOCOLATES</span></p>
+                    <p>$5.0</p> 
+                    <p>Buy Now</p></center> 
+            </div>    
+        </div>
+</div>
+    <hr>
+    <!-- offers -->
+<div class="e5" id="OFFERS">
+        <div class="e5a"> 
+            <center>
+            <h1 class="h9">Offers on chocolates</h1>
+            <p class="h9">Get 5% Offer</p>
+            <p class="h9">any Chocolate items</p>
+            <input type="submit" value="Buy Now" class="h10">
+            </center>
+        </div>
+        <div class="e5b">
+            <center>
+            <img src="offer-img.png" alt="">
+            </center>
+        </div>
+        <br>
+        <div class="choco">
+            <center>
+                <a href="https://www.hollandandbarrett.com/shop/food-drink/snacks/chocolate-cakes-biscuits/chocolate/?utm_medium=cpc&utm_source=bing&utm_campaign=nonbrand/&utm_medium=cpc&utm_source=bing&utm_campaign=nonbrand&&msclkid=f85d8d0510251b634316ebfbcddf296e&utm_source=bing&utm_medium=cpc&utm_campaign=IM%20-%20%5BF%26D%5D%20-%20Generic%20-%20Product%20-%20%5BHK%5D&utm_term=chocolate%20bar&utm_content=Generic%20-%20Snacks%20-%20Chocolate%20Bar%20-%20%5BHK%5D&gclid=f85d8d0510251b634316ebfbcddf296e&gclsrc=3p.ds" class="h11">See More  <img src="color-arrow.png"></p></a>
+            </center>
+        </div>
+</div>
+    <hr>
+    <!-- testimonial -->
+    <div class="e6" id="TESTIMONIAL">
+        <div>
+            <img src="client-chocolate.png" class="e6a" >
+        </div>
+        <div class="e6b">
+            <div class="a">
+                    <img src="client-img.jpg" width="100px" height="100px" style="margin-left: -10px; margin-top: 50px;">
+                <div>
+                    <center>
+                    <h1 class="h12">Testimonial</h1></center>
+                    <h2 class="h12">Gero Miliya</h2>
+                    <p class="h12">long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+                    <br>
+                    <i class="fa-solid fa-quote-left" style="font-size: large;"></i>
+                </div>
+             </div>
+             
+        </div>
+    </div>
+    <hr>
+    <!-- contact -->
+    <div class="e7" id="CONTACT US">
+         <div class="e7a">
+            <h1 class="h6">Contact Us</h1>
+            <input type="text" placeholder="Fullname" size="55px" class="h7"><br>
+            <input type="text" placeholder="Phone Number" size="55px" class="h7"><br>
+            <input type="Email" placeholder="email" size="55px"  class="h7"><br>
+            <textarea rows="5" cols="52" placeholder="Message"  class="h7"></textarea><br><br>
+            <button type="submit" class="h8">Send Now</button>
+        </div>
+         <div class="e7b">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15220.601923252818!2d78.37694522070792!3d17.500328639482902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f6d0367e5b%3A0xb7416ee28bb6e83d!2sChocolate%20Factory!5e0!3m2!1sen!2sin!4v1727867159621!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    </div>
+    <hr>
+    <!-- bolg page -->
+    <div class="e8">
+        <div >
+            <input type="text" placeholder="Enter Your Email"  class="e8a" pattern="[a-z0-9]+@[a-z]+\.[a-z]+" size="70px">
+            <input type="submit" name="" id="e88">
+            <i class="fa-solid fa-arrow-right-long fa-bounce fa-xl" style="color: #eff3fb;"></i>
+            <i class="fa-brands fa-facebook fa-beat-fade fa-xl" style="color: #f4f7fa;"></i>
+            <i class="fa-brands fa-twitter fa-beat-fade fa-xl" style="color: #f0f2f4;"></i>
+            <i class="fa-brands fa-linkedin fa-beat-fade fa-xl" style="color: #f4f7fa;"></i>
+        </div>
+         <div class="e8b">
+            <div>  
+                <h2 class="h17"> MENU</h2><br>
+                    <a href="#HOME" class="h18">HOME</a><br><br>
+                    <a href="#ABOUT" class="h18">ABOUT</a><br><br>
+                    <a href="#CHOCOLATES" class="h18">CHOCOLATES</a><br><br>
+                    <a href="#OFFERS" class="h18">OFFERS</a><br><br>
+                    <a href="#TESTIMONIAL" class="h18">TESTIMONIAL</a><br><br>
+                    <a href="#CONTACT US" class="h18">CONTACT US</a><br><br>
+            </div>
+            <div>
+                <h2 class="h17">Instagram</h2>
+                 <div class="e8c">
+                    <img src="insta-img.png" alt="" height="50px" class="h19">
+                    <p class="h20">long established fact <br> that a reader</p>
+                 </div>
+                 <div class="e8c">
+                    <img src="insta-img.png" alt="" height="50px" class="h19">
+                    <p class="h20">long established fact <br> that a reader</p>
+                 </div>
+            </div>
+            <div>
+                <h2 class="h17">Company</h2>
+                <p class="h21">when looking at its layout. The <br> point of using Lorem Ipsum is <br>that it has a more-or-less <br> normal distribution of letters, as <br> opposed to</p>
+            </div>
+            <div>
+                <h2 class="h17">Contact Us</h2>
+                 <div class="h22">
+                    <i class="fa-solid fa-location-dot " style="color: #f2f2f3;"> </i>location<br><br>
+                    <i class="fa-solid fa-phone " style="color: #e9ecf1;"></i> call +91 9876543201<br><br>
+                    <i class="fa-regular fa-envelope " style="color: #eceff4;"></i>mail@domain.com
+                 </div>
+            </div> 
+         </div>
+    </div><br>
+    <center>
+        <h5>By -<a href="https://www.linkedin.com/in/sravya-kaja-a4a259255/" style="text-decoration: none;" >Sravya-kaja</a>
+         </h5><br>
+</center>
+</body>
+</html>
